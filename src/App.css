@@ -3,8 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
+}
+html {
+  scroll-behavior: smooth;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,7 +16,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.navBartext {
+  font-family: "Dancing Script", cursive;
+  font-size: larger;
+  align-items: center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,7 +29,54 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: "Dancing Script", cursive;
   color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.NavBaroptions{
+ 
+  /* flex-direction: row; */
+  
+   align-items: flex-end; 
+  flex: auto;
+  
+  /* background-color:red; */
+
+}
+nav ul li{
+  
+  list-style-type: none;
+  
+
+}
+nav ul li a{
+  text-decoration: none;
+  flex: auto;
+}
+nav ul{
+ display:flex;
+justify-content:space-around;
+
+
+ /* background-color: sandybrown; */
+}
+
+.NavBarlogo{
+  flex:1;
+  align-self: center;
+  
+  /* background-color: sandybrown; */
+}
+
+.NavBar{
+  display: flex;
+   margin: 1em; 
+   
+
+  
+  
 }
 
 .App-link {
