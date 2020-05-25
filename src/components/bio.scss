@@ -3,17 +3,17 @@
   display: flex;
 
   .name {
-    // position: relative;
+    //  position: relative;
     width: 50%;
     // margin: 15%;
     text-align: center;
     color: blanchedalmond;
     // position: absolute;
-    padding: 4rem 2rem;
-    font-size: 2rem;
+    padding: 4rem 3rem;
+    font-size: 1.8rem;
   }
   .photo {
-    // position: relative;
+    //  position: relative;
     width: 50%;
     height: 100%;
     padding: 2em 2em;
@@ -26,7 +26,6 @@
       padding: 10px;
       transition: transform 0.2s;
       // box-shadow: 0 5px 5px white;
-      
     }
     img:hover {
       -ms-transform: scale(1.5); /* IE 9 */
@@ -34,30 +33,7 @@
       transform: scale(1.5);
     }
   }
-  .icons {
-    width: 5%;
-     height: 100%;
-    position: fixed;
-     padding: 0.3rem;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-    
-     .vertical {
-       border-left: 2px solid white;
-       height: 390px;
-       align-items: flex-start;
-     }
-    
-      
-      img {
-        
-padding: 0.3rem;
-        height: 2rem;
-        width: 2rem;
-      
-    }
-  }
+  
   .gmail {
     display: flex;
     flex-direction: column;
@@ -71,17 +47,17 @@ padding: 0.3rem;
 
     align-items: center;
     justify-content: center;
-     
+
     .vertical {
       border-left: 2px solid white;
       height: 290px;
       align-items: flex-start;
-     
     }
     p {
       font-size: 1rem;
       writing-mode: vertical-rl;
       text-orientation: mixed;
+      
     }
   }
 }
@@ -92,12 +68,13 @@ padding: 0.3rem;
     }
     .name {
       width: 100%;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      text-align: left ;
     }
-    .icons{
+    .icons {
       display: none;
     }
-    .gmail{
+    .gmail {
       display: none;
     }
   }

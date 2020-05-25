@@ -4,6 +4,7 @@ import "./navbar.scss";
 import About from "./About";
 import Bio from './Bio';
 import "./React_FrontEnd_Assignment.pdf";
+import Skills from './Skills'
 export default class navBar1 extends Component {
   constructor(props) {
     super(props);
@@ -39,13 +40,13 @@ export default class navBar1 extends Component {
               <a href="#About">About</a>
             </li>
             <li class="nav-link">
-              <a href="#">Skills</a>
+              <a href="#Skills">Skills</a>
             </li>
             <li class="nav-link">
               <a href="#">Education</a>
             </li>
             <li class="nav-link">
-              <a href="#">Contact</a>
+              <a href="#">work</a>
             </li>
             <li class="nav-link">
               <a

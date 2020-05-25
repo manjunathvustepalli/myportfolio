@@ -20,37 +20,6 @@ class  Name extends React.Component{
 return (
   <div id="Bio">
     <div class="details">
-      <div class="icons">
-        
-        <div class="vertical"></div>
-        <ul>
-          <li>
-            <a href="https://www.freecodecamp.org/vmanjunath" target="_blank">
-              <img src="./download (1).png" height="25" width="25" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/manjunathvustepalli" target="_blank">
-              <img src="./github.png" height="25" width="25" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/vmanjunath98/" target="_blank">
-              <img src="./linkedin.png" height="25" width="25" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.hackerrank.com/manjunathvustep1"
-              target="_blank"
-            >
-              <img src="./download.png" height="25" width="25" />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
       <div class="name">
         <p>Hi my name is</p>
         <h1>V Manjunath</h1>
