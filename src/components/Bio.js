@@ -23,7 +23,7 @@ return (
       <div class="name">
         <p>Hi my name is</p>
         <h1>V Manjunath</h1>
-        <h2>I built things for web</h2>
+        <h2>I build things for web</h2>
       </div>
       <div class="photo">
         <img src="photo.jpg" alt="me" />

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import Bio from './Bio';
 import About from './About'
+import Education from './Education'
 export default class NavBar extends Component {
   render() {
     return (
@@ -27,7 +28,7 @@ export default class NavBar extends Component {
                 <a href="#Bio">Skills</a>
               </li>
               <li>
-                <a href="#Bio">Education</a>
+                <a href="#Education">Education</a>
               </li>
               <li>
                 <a href="#Bio">Contact</a>
