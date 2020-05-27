@@ -8,6 +8,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Work from './components/Work'
+import { colors } from "@material-ui/core";
 //import { BrowserRouter as Router, Route, Link, browserHistory, IndexRoute, Switch } from 'react-router-dom';
 function App() {
   return (
@@ -59,6 +60,8 @@ function App() {
       <About />
       <Skills />
       <Education />
+    
+      <Work />
     </div>
   );
 }
