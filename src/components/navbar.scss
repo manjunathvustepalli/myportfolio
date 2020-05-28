@@ -10,10 +10,7 @@
 }
 
 body {
-  // font-family: 'Amatic SC', cursive;
-  // font-family: 'Indie Flower', cursive;
-  // font-family: 'Lobster', cursive;
-  // font-family: 'Calligraffitti', cursive;
+  
   font-family: "Megrim", cursive;
   background-color: black;
 }
@@ -22,8 +19,11 @@ body {
   margin: 2rem auto;
 }
 
+
 .main-header {
-  //position: fixed;
+  #menuicon{
+    display: none;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,9 +43,7 @@ body {
   }
   .nav-link {
     transition: transform 0.2s;
-    // width: 200px;
-    //height: 200px;
-    //margin: 0 auto;
+   
     a {
       margin: 0.1rem;
       padding: 1rem 2rem;
@@ -83,35 +81,50 @@ body {
 }
 @media (max-width: 767px) {
   .main-header {
+    
+    #menuicon{
+      display: block;
+      z-index: 1;
+    }
     .menubutton {
       background-color: black;
       border-color: black;
       display: flex;
       z-index: 1;
     }
+    
     .menu-icon {
+      display: block;
+    }
+    .nav-links{
       display: none;
     }
-    .nav-links {
+    .nav{
+     
       position: absolute;
+
       top: 0;
       left: 0;
-      opacity: 0;
+      opacity: 1;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       padding: 10rem 0;
       width: 100%;
       height: 100%;
-      font-size: 2rem;
+      
       color: blanchedalmond;
       background: black;
-      transition: opacity 0.5s 0.5s, clip-path 1s 0.5s;
-      clip-path: circle(200px at top right);
-    }
-    .menu-icon:checked ~ .nav-links {
-      opacity: 1;
       clip-path: circle(100% at center);
+      button{
+        //  background-color: black;
+      border-color:black;
+      background: black;
+      font-size: 2rem;
+      font-family: "Megrim", cursive;
+      }
+     
     }
+    
   }
 }

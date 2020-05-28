@@ -3,61 +3,138 @@ import React, { Component } from "react";
 import "./navbar.scss";
 import About from "./About";
 import Bio from './Bio';
-import "./React_FrontEnd_Assignment.pdf";
+
 import Skills from './Skills';
 import Education from './Education';
+import MediaQuery from "react-responsive";
 export default class navBar1 extends Component {
   constructor(props) {
     super(props);
-    this.menubar = this.menubar.bind(this);
+    
+    //  this.getResolution = this.getResolution.bind(this);
     this.menuvalue = false;
     this.state={
-    menuval:true
+    menuval:false
   }
   }
   
-  menubar() {
-    this.setState({menuval:false})
-  }
+  
+   
   render() {
     return (
       <div class="body">
         <header class="main-header">
           <div class="logo">
-            <a href="https://www.w3schools.com">
+            <a href="https://manjunathvustepalli.github.io/myportfolio/">
               <img src="logo.png" alt="logo" height="42" width="42" />
             </a>
           </div>
-          {/* <input type="checkbox" class="menu-btn" id="menu-btn" />
-              <label for="menu-btn" class="menu-icon">
-                <span className="menu-icon_line"></span>
-              </label> */}
-          <input type="checkbox" class="menu-icon" id="menu-icon" />
-          <label htmlFor="menu-icon" class="menubutton">
+          <MediaQuery minDeviceWidth={1224} device={{ deviceWidth: 1600 }}>
+            <ul class="nav-links">
+              <li class="nav-link">
+                <a href="#About">About</a>
+              </li>
+
+              <li class="nav-link">
+                <a href="#Skills">Skills</a>
+              </li>
+              <li class="nav-link">
+                <a href="#Education">Eduction</a>
+              </li>
+              <li class="nav-link">
+                <a href="#Work">work</a>
+              </li>
+              <li class="nav-link">
+                <a
+                  href="https://drive.google.com/file/d/1iavqGH0tS6hCR0l_bO-PkSezwW0O7Q3J/view?usp=sharing"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </MediaQuery>
+          <button
+            id="menuicon"
+            style={{
+              backgroundimage: "menu.png",
+              backgroundColor: "black",
+              borderColor: "black",
+            }}
+            onClick={() =>
+              this.setState((prevState) => ({
+                menuval: !prevState.menuval,
+              }))
+            }
+          >
             <img src="menu.png" alt="logo" height="24" width="24" />
-          </label>
-          <ul class="nav-links">
-            <li class="nav-link">
-              <a href="#About">About</a>
-            </li>
-            <li class="nav-link">
-              <a href="#Skills">Skills</a>
-            </li>
-            <li class="nav-link">
-              <a href="#Education">Education</a>
-            </li>
-            <li class="nav-link">
-              <a href="#Work">work</a>
-            </li>
-            <li class="nav-link">
-              <a
-                href="https://drive.google.com/file/d/1U0Xrua--lKUBWM3jnmoYJN9ySwQXh_QA/view?usp=sharing"
-                target="_blank"
+          </button>
+          {this.state.menuval ? (
+            <ul class="nav">
+              <button
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    menuval: !prevState.menuval,
+                  }))
+                }
               >
-                Resume
-              </a>
-            </li>
-          </ul>
+                <li class="nav-link">
+                  <a href="#About">About</a>
+                </li>
+              </button>
+              <button
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    menuval: !prevState.menuval,
+                  }))
+                }
+              >
+                <li class="nav-link">
+                  <a href="#Skills">Skills</a>
+                </li>
+              </button>
+              <button
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    menuval: !prevState.menuval,
+                  }))
+                }
+              >
+                <li class="nav-link">
+                  <a href="#Education">Education</a>
+                </li>
+              </button>
+              <button
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    menuval: !prevState.menuval,
+                  }))
+                }
+              >
+                <li class="nav-link">
+                  <a href="#Work">work</a>
+                </li>
+              </button>
+              <button
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    menuval: !prevState.menuval,
+                  }))
+                }
+              >
+                <li class="nav-link">
+                  <a
+                    href="https://drive.google.com/file/d/1U0Xrua--lKUBWM3jnmoYJN9ySwQXh_QA/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Resume
+                  </a>
+                </li>
+              </button>
+            </ul>
+          ) : (
+            ""
+          )}
         </header>
       </div>
     );

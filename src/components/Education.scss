@@ -5,15 +5,15 @@
     color: blanchedalmond;
     text-align: center;
     padding: 2rem;
-    // background-color: brown;
+    
   }
   .details {
-    //  background-color: brown;
+    
     display: flex;
     flex-direction: row;
     padding: 0.8rem 3rem;
 .images{
-    //  background-color: red;
+    
     display: flex;
     flex:1.5;
     flex-direction: column;
@@ -24,21 +24,18 @@
     .text {
       flex: 4;
       
-        //  background-color: chartreuse;
-    //   align-items: center;
+        
       justify-content: space-between;
       display: flex;
       flex-direction: column;
-    //   padding: 1rem;
+    
       div {
         display: flex;
         flex-direction: column;
-        // text-align: center;
+        
         justify-content: flex-start;
         align-items: flex-start;
-        //   padding: 1rem;
-        //   align-items: flex-start;
-        //   background-color: brown;
+        
         b,p,small{
           color: blanchedalmond;
           padding: 0.2rem 1rem;
@@ -46,7 +43,7 @@
          
           flex-direction:column ;   
           display: flex;
-        //   flex: 1;
+      
         }
        
       }
@@ -55,10 +52,13 @@
       flex: 2;
       align-items: flex-start;
       justify-content: flex-start;
-        // background-color:green;
-
-      // width: 90%;
+       
     }
   }
-  //   background-color: crimson;
+  
+}
+ @media (max-width: 767px) {
+ .chart {
+ display: none;
+}
 }

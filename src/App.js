@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.scss";
 import Bio from "./components/Bio";
-import NavBar from "./components/NavBar";
+
 import NavBar1 from "./components/navBar1";
 import About from "./components/About";
 import Skills from "./components/Skills";
