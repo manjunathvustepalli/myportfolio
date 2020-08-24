@@ -46,7 +46,7 @@ export default class navBar1 extends Component {
               </li>
               <li class="nav-link">
                 <a
-                  href="https://drive.google.com/file/d/1iavqGH0tS6hCR0l_bO-PkSezwW0O7Q3J/view?usp=sharing"
+                  href="https://drive.google.com/file/d/161sM4NLtGlWCcGptRL1cX3A3sJa0MbA3/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
